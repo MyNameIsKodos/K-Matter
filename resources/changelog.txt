@@ -1,0 +1,13 @@
+v0.2
+	Whee! Fyool!
+
+	Added K-Matter Infused Coal
+	
+
+v0.1
+	Initial Dev Release
+
+	Added Initial Framework
+	Added Decorative K-Matter Block, colored versions to come
+	Added K-Matter, recipes WIP
+	Added recipe to obtain K-Matter, only temporary
