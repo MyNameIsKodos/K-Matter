@@ -1,0 +1,19 @@
+[
+{
+  "modid": "KMatter",
+  "name": "K-Matter",
+  "description": "Kodos' replacement for UUM",
+  "version": "0.2",
+  "credits": "Kodos",
+  "logoFile": "",
+  "mcversion": "1.6.2",
+  "url": "",
+  "updateUrl": "",
+  "authors": [ "Kodos" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+     "MinecraftForge"
+  ]
+}
+]
