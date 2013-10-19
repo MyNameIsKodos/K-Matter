@@ -4,7 +4,7 @@
 	<!-- Properties -->
 
 	<property name="build.dir" value="build"/>
-	<property name="src.dir" value="src/kmatter"/>
+	<property name="src.dir" value="src"/>
 	<property name="resources.dir" value="resources"/>
 
 	<property name="download.dir" value="download"/>
