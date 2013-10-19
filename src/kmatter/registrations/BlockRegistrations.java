@@ -2,7 +2,7 @@ package kmatter.registrations;
 
 import kmatter.KConfig;
 import kmatter.blocks.KMatterBlock;
-import kmatter.machines.synth.ksynth;
+import kmatter.machines.synth.BlockSynth;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ public class BlockRegistrations {
 
 public static void blockregistration ()
 {
-    ksynth = new ksynth(KConfig.ksynthid).setUnlocalizedName("ksynth");   
+    ksynth = new BlockSynth(KConfig.ksynthid).setUnlocalizedName("ksynth");   
     GameRegistry.registerBlock(ksynth, "ksynth");
 }
 
