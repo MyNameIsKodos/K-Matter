@@ -7,9 +7,7 @@
 	<property name="src.dir" value="src"/>
 	<property name="resources.dir" value="resources"/>
 	
-	<property name="ueapi.dir" value="universalelectricity"/> 
-	<property name="bcapi.dir" value="buildcraft"/> 
-	<property name="teapi.dir" value="thermalexpansion"/> 
+	<property name="api.dir" value="api"/> 
 
 	<!-- if it fails^ remove this -->
 
@@ -116,38 +114,19 @@
 		</copy>
 	</target>
 	
-		<target name="copy-ueapi">
+		<target name="copy-api">
 		<!-- Copy  api sources -->
 		<copy todir="${mcpsrc.dir}/minecraft">
-			<fileset dir="${src.dir}"/>
+			<fileset dir="${api.dir}"/>
 			<filterset>
 				<filter token="VERSION" value="${project.version.full}" />
 			</filterset>
 		</copy>
 	</target>
-		<target name="copy-bcapi">
-		<!-- Copy  api sources -->
-		<copy todir="${mcpsrc.dir}/minecraft">
-			<fileset dir="${src.dir}"/>
-			<filterset>
-				<filter token="VERSION" value="${project.version.full}" />
-			</filterset>
-		</copy>
-	</target>
-	<target name="copy-teapi">
-		<!-- Copy  api sources -->
-		<copy todir="${mcpsrc.dir}/minecraft">
-			<fileset dir="${src.dir}"/>
-			<filterset>
-				<filter token="VERSION" value="${project.version.full}" />
-			</filterset>
-		</copy>
-	</target>
-	
 	
 	<!-- if it fails^ remove this -->
 
-	<target name="compile" depends="initialize-version,setup,copy-src">
+	<target name="compile" depends="initialize-version,setup,copy-src,copy-api">
 
 		<delete dir="${classes.dir}"/>
 		<mkdir dir="${classes.dir}"/>
