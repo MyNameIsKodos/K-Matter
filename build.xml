@@ -6,7 +6,12 @@
 	<property name="build.dir" value="build"/>
 	<property name="src.dir" value="src"/>
 	<property name="resources.dir" value="resources"/>
+	
 	<property name="api.dir" value="api"/> 
+	<property name="ueapi.dir" value="api/universalelectricity"/> 
+	<property name="bcapi.dir" value="api/buildcraft"/> 
+	<property name="teapi.dir" value="api/thermalexpansion"/> 
+
 	<!-- if it fails^ remove this -->
 
 	<property name="download.dir" value="download"/>
@@ -112,8 +117,26 @@
 		</copy>
 	</target>
 	
-		<target name="copy-api">
-		<!-- Copy sources -->
+		<target name="copy-ueapi">
+		<!-- Copy  api sources -->
+		<copy todir="${mcpsrc.dir}/minecraft">
+			<fileset dir="${src.dir}"/>
+			<filterset>
+				<filter token="VERSION" value="${project.version.full}" />
+			</filterset>
+		</copy>
+	</target>
+		<target name="copy-bcapi">
+		<!-- Copy  api sources -->
+		<copy todir="${mcpsrc.dir}/minecraft">
+			<fileset dir="${src.dir}"/>
+			<filterset>
+				<filter token="VERSION" value="${project.version.full}" />
+			</filterset>
+		</copy>
+	</target>
+	<target name="copy-teapi">
+		<!-- Copy  api sources -->
 		<copy todir="${mcpsrc.dir}/minecraft">
 			<fileset dir="${src.dir}"/>
 			<filterset>
