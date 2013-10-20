@@ -6,6 +6,8 @@
 	<property name="build.dir" value="build"/>
 	<property name="src.dir" value="src"/>
 	<property name="resources.dir" value="resources"/>
+	<property name="api.dir" value="api"/> 
+	<!-- if it fails^ remove this -->
 
 	<property name="download.dir" value="download"/>
 
@@ -109,6 +111,19 @@
 			</filterset>
 		</copy>
 	</target>
+	
+		<target name="copy-api">
+		<!-- Copy sources -->
+		<copy todir="${mcpsrc.dir}/minecraft">
+			<fileset dir="${src.dir}"/>
+			<filterset>
+				<filter token="VERSION" value="${project.version.full}" />
+			</filterset>
+		</copy>
+	</target>
+	
+	
+	<!-- if it fails^ remove this -->
 
 	<target name="compile" depends="initialize-version,setup,copy-src">
 
