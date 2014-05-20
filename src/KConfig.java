@@ -1,4 +1,4 @@
-package kmatter;
+package com.kmatter;
 
 import java.io.File;
 import java.util.Set;
@@ -20,7 +20,6 @@ public class KConfig
 
         String blocks = "Block IDs";
         kdecorids = config.getBlock(blocks, "K-Decor Block ID", 3500).getInt(3500);
-        ksynthid = config.getBlock(blocks, "K-Matter Synthesizer Block ID", 3502).getInt(3502);
 
         String items = "Item IDs";
         kmatterid = config.getItem(items, "K-Matter Item ID", 10000).getInt(10000); //Always add the get thingies afterwards.
@@ -34,7 +33,6 @@ public class KConfig
 
     // #### Block id ints and booleans###
     public static int kdecorids;
-    public static int ksynthid;
 
     // #### Item IDs ints and booleans####
     public static int kmatterid;

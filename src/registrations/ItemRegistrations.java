@@ -1,9 +1,9 @@
-package kmatter.registrations;
+package com.kmatter.registrations;
 
-import kmatter.KConfig;
-import kmatter.blocks.KMatterBlock;
-import kmatter.items.ItemKMatter;
-import kmatter.registrations.KMatterDecorativeRegistrations;
+import com.kmatter.KConfig;
+import com.kmatter.blocks.KMatterBlock;
+import com.kmatter.items.ItemKMatter;
+import com.kmatter.registrations.KMatterDecorativeRegistrations;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -31,7 +31,7 @@ public class ItemRegistrations
     
     {
    
-    	    	infusedcoal = new kmatter.items.InfusedCoal(KConfig.kcoalid - 256)
+    	    	infusedcoal = new com.kmatter.items.InfusedCoal(KConfig.kcoalid - 256)
     	    			.setUnlocalizedName("infusedcoal");
     	    	LanguageRegistry.addName(infusedcoal,  "KM-Infused Coal");
     	    

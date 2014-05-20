@@ -1,7 +1,7 @@
-package kmatter.utils;
+package com.kmatter.utils;
 
 import cpw.mods.fml.common.IFuelHandler;
-import kmatter.KConfig;
+import com.kmatter.KConfig;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 

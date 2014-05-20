@@ -1,4 +1,4 @@
-package kmatter.items;
+package com.kmatter.items;
 
 import java.util.List;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -16,7 +16,7 @@ public class ItemKMatter extends Item {
 	public ItemKMatter(int par1) {
 		super(par1);
 		this.setHasSubtypes(true);
-		setCreativeTab(kmatter.KMatter.tabCustom);
+		setCreativeTab(com.kmatter.KMatter.tabCustom);
 	}
 
 	@SideOnly(Side.CLIENT)

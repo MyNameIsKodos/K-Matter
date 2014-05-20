@@ -1,4 +1,4 @@
-package kmatter.blocks;
+package com.kmatter.blocks;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class KMatterBlock extends Block
         super(id, Material.rock);
         setHardness(3.0F);
         setResistance(2000.0F);
-        setCreativeTab(kmatter.KMatter.tabCustom);
+        setCreativeTab(com.kmatter.KMatter.tabCustom);
     }
 
     private Icon[] iconBuffer;

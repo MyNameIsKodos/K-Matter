@@ -1,8 +1,8 @@
-package kmatter.items;
+package com.kmatter.items;
 
 import java.util.List;
 
-import kmatter.KConfig;
+import com.kmatter.KConfig;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ public class InfusedCoal extends Item {
 	public InfusedCoal(int par1) {
 		super(par1);
 		this.setHasSubtypes(true);
-		setCreativeTab(kmatter.KMatter.tabCustom);
+		setCreativeTab(com.kmatter.KMatter.tabCustom);
 		this.setMaxStackSize(1);
 	}
 

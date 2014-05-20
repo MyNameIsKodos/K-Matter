@@ -1,4 +1,4 @@
-package kmatter;
+package com.kmatter;
 
 public class DefaultProps
 {

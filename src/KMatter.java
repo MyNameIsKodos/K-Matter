@@ -1,12 +1,12 @@
-package kmatter;
+package com.kmatter;
 
-import kmatter.machines.synth.TileSynth;
-import kmatter.registrations.BlockRegistrations;
-import kmatter.registrations.ItemRegistrations;
-import kmatter.registrations.KMatterDecorativeRegistrations;
-import kmatter.utils.InfCoalFuelHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+
+import com.kmatter.registrations.ItemRegistrations;
+import com.kmatter.registrations.KMatterDecorativeRegistrations;
+import com.kmatter.utils.InfCoalFuelHandler;
+
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -16,7 +16,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -62,9 +61,6 @@ public class KMatter {
 		LanguageRegistry.instance().addStringLocalization("itemGroup.kmatter",
 				"en_US", "K-Matter");
 		
-		GameRegistry.registerTileEntity(TileSynth.class, "tileSynth");
-		NetworkRegistry.instance().registerGuiHandler(this, proxy);
-		BlockRegistrations.blockregistration();
 	}
 
 	/*
@@ -76,7 +72,7 @@ public class KMatter {
 	public static CreativeTabs tabCustom = new CreativeTabs("kmatter") {
 		public ItemStack getIconItemStack() {
 			return new ItemStack(
-					kmatter.registrations.ItemRegistrations.itemkmatter);
+					com.kmatter.registrations.ItemRegistrations.itemkmatter);
 		}
 	};
 

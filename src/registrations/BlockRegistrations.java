@@ -1,8 +1,7 @@
-package kmatter.registrations;
+package com.kmatter.registrations;
 
-import kmatter.KConfig;
-import kmatter.blocks.KMatterBlock;
-import kmatter.machines.synth.BlockSynth;
+import com.kmatter.KConfig;
+import com.kmatter.blocks.KMatterBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -11,11 +10,15 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class BlockRegistrations {
 
-public static void blockregistration ()
+public BlockRegistrations(int kdecorids) {
+		// TODO Auto-generated constructor stub
+	}
+/*public static void blockregistration ()
 {
-    ksynth = new BlockSynth(KConfig.ksynthid).setUnlocalizedName("ksynth");   
+    ksynth = new ksynth(KConfig.ksynthid).setUnlocalizedName("ksynth");   
     GameRegistry.registerBlock(ksynth, "ksynth");
-}
+}*/
+
 
 public static void addRecipes ()
 {

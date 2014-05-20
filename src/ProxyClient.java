@@ -1,4 +1,4 @@
-package kmatter;
+package com.kmatter;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraftforge.client.MinecraftForgeClient;

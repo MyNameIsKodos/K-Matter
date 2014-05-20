@@ -1,4 +1,4 @@
-package kmatter.itemblocks;
+package com.kmatter.itemblocks;
 
 import java.util.List;
 
