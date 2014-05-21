@@ -83,7 +83,7 @@ public class ItemRegistrations
         GameRegistry.addRecipe(new ItemStack(Item.enderPearl, 1), "x x", " xx", "x x", 'x', new ItemStack(itemkmatter));
         GameRegistry.addRecipe(new ItemStack(Item.slimeBall, 8), "x x", " x ", "xxx", 'x', new ItemStack(itemkmatter));
         GameRegistry.addRecipe(new ItemStack(Item.leather, 12), "x  ", "x  ", "xxx", 'x', new ItemStack(itemkmatter));
-        GameRegistry.addRecipe(new ItemStack(itemkmatter, 64), "ror", "odo", "ror", 'r', new ItemStack(Item.redstone), 'o', new ItemStack(Item.glowstone), 'd', new ItemStack(Item.diamond));
+        GameRegistry.addRecipe(new ItemStack(itemkmatter, 2), "ror", "odo", "ror", 'r', new ItemStack(Item.redstone), 'o', new ItemStack(Item.glowstone), 'd', new ItemStack(Item.diamond));
         GameRegistry.addRecipe(new ItemStack(infusedcoal, 1), "xxx", "xyx", "xxx", 'x', new ItemStack(itemkmatter), 'y', new ItemStack(Item.coal));
     }
 

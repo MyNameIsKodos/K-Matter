@@ -28,7 +28,7 @@ public class KMatter {
 	public static KMatter instance;
 	public static final String modid = "kmatter";
 
-	@SidedProxy(clientSide = "kmatter.ProxyClient", serverSide = "kmatter.Proxy")
+	@SidedProxy(clientSide = "com.kmatter.ProxyClient", serverSide = "com.kmatter.Proxy")
 	public static Proxy proxy;
 
 	@EventHandler
