@@ -9,5 +9,5 @@ v0.1
 
 	Added Initial Framework
 	Added Decorative K-Matter Block, colored versions to come
-	Added K-Matter, recipes WIP
-	Added recipe to obtain K-Matter, only temporary
+	Added K-Matter
+	Added recipe to obtain K-Matter
